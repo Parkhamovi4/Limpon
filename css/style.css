@@ -142,6 +142,7 @@ h1{
     border: 1px solid #1085e4;
     padding: 20px 40px;
     border-radius: 30px;
+    transition: 0.3s;
 }
 .btn-primary:hover{
     color: #1085e4;
@@ -150,6 +151,8 @@ h1{
 
 .btn-primary.activ{
      padding: 20px 62px;
+     transition: 0.3s;
+
    
 }
 .btn-primary.activ:hover{
@@ -167,7 +170,9 @@ h1{
     background-color:#cbdbe8;
     border: 1px solid #cbdbe8;
     padding: 20px 40px;
-    border-radius: 30px;  
+    border-radius: 30px; 
+    transition: 0.3s;
+
 }
 .btn-secondary:hover{
      background-color:#fff;
@@ -177,6 +182,8 @@ h1{
     font-weight:400;
     padding: 20px 50px;
     letter-spacing: 2.5px;
+    transition: 0.3s;
+
 }
 
 .btn-info{
@@ -188,7 +195,9 @@ h1{
     background: transparent;
     border:1px solid #dce1e5;
     padding: 20px 62px;
-    border-radius: 30px;  
+    border-radius: 30px;
+    transition: 0.3s;
+  
 }
 .btn-info.box-price{
     color: #8085b1;
@@ -250,24 +259,23 @@ h1{
                         "d f g"
                         "e f g"
                         "e h h";
+    grid-gap: 35px;
+    grid-template-columns: 1fr 1fr 1fr;
     max-width: 1110px;
-    margin: 0 auto;
-    
+    margin: 0 auto;   
+    padding: 120px 0; 
 }
 .grid-title{
     grid-area: a;
 }
 .grid-item-1{
-    
     grid-area: b;
 }
-.grid-item-2{
-   
+.grid-item-2{   
     grid-area: c;
 }
 .grid-item-3{
-    grid-area: d;
-    
+    grid-area: d;    
 }
 .grid-item-4{
     grid-area: e;
@@ -283,12 +291,23 @@ h1{
 }
 .grid-text{
     grid-area: h;
+    padding: 0 14px;
+}
+.grid-name{
+    font-size: 14px;
+    color:#1085e4;
+}
+.grid-name span{
+    font-size: 16px;
+    font-weight: 700;
+    color: #192b59;
 }
 .grid h2{
 font-size: 40px;
 color:#192b59;
 font-weight: 700;
-padding: 90px 0;
+margin-top: 0;
+margin-bottom: 0;
 }
 
 .grid h2 span{
@@ -300,13 +319,9 @@ padding: 90px 0;
 .grid-item{
     text-align: center;
     box-shadow: 0px 8px 13px 0px #f4f4f4;
-    border-radius: 7px;
-    width: 340px;
-    height: 280px;
-    margin: 5px 5px;
-    padding: 70px 5px 60px 5px;
+    border-radius: 7px;   
+    padding: 50px 0 50px 0; 
 }
-
 
 .grid-item h3{
     font-size: 20px;
@@ -321,41 +336,95 @@ padding: 90px 0;
 }
 
 .grid-icon{
-    background-repeat: none;
+    background-repeat: no-repeat;
     display: block;
-    margin: 0 auto 36px;
+    height: 92px;
+    margin: 0 auto 21px;
+    background-position: center;
 }
 
 .grid-icon-1{
     background-image: url(../img/icon1.png);
-    width: 73px;
-    height: 79px;
+    background-size:  73px 79px;    
 }
 .grid-icon-2{
     background-image: url(../img/icon2.png);
-    width: 89px;
-    height: 85px;
+    background-size:  89px 85px;   
 }
 .grid-icon-3{
     background-image: url(../img/icon3.png);
-    width: 79px;
-    height: 82px;
+    background-size:  79px 82px;    
 }
 .grid-icon-4{
     background-image: url(../img/icon4.png);
-    width: 103px;
-    height: 92px;
+    background-size:  103px 92px;    
 }
 .grid-icon-5{
     background-image: url(../img/icon5.png);
-    width: 85px;
-    height: 90px;
+    background-size:  85px 90px;   
 }
 .grid-icon-6{
     background-image: url(../img/icon6.png);
-    width: 100px;
-    height: 87px;
+    background-size:  100px 87px;   
 }
+
+.page-software-icon{
+    display: block;
+    background-image: url(../img/features-icon.png);
+    width: 115px;
+    height: 97px;
+    background-repeat: no-repeat;
+    background-position: -28px 0;
+}
+.page-software .title-h2{
+    max-width: 750px;
+    margin-top: 12px;
+    margin-bottom: 26px;
+}
+
+.page-software-flex{
+    display: flex;
+    justify-content: flex-end;  
+    }
+
+.page-software-img{
+    display: block;
+    background-image: url(../img/features-pic.png);
+    background-repeat: no-repeat;
+    width: 931px;
+    height: 760px;
+    position: absolute;
+    left: 0;
+    top:3095px;
+}
+
+.page-software-flex>div{
+    flex-basis: 55%;
+}
+.page-software-list dt{
+font-weight: 700;
+color: #5a6789;
+margin-bottom: 10px;
+
+}
+.page-software-list dd{
+    margin-left: 0;
+    margin-bottom: 50px;
+    font-size: 14px;
+    line-height: 1.8;
+}
+.page-software-list{
+    margin-top: 30px;
+    height: 323px;
+    overflow: hidden;
+    overflow-y: scroll;
+}
+
+.page-software-list::-webkit-scrollbar { width: 5px; height: 314px;}
+.page-software-list::-webkit-scrollbar-track-piece { background-color: #f3f6ff;}
+.page-software-list::-webkit-scrollbar-thumb { height: 5px; background-color: #1085e4; border-radius: 3px;}
+
+
 .box-subscribe{
     display: flex;
     justify-content: space-between;
@@ -365,9 +434,11 @@ padding: 90px 0;
 .box-subscribe-text{
     font-size: 18px;
     max-width: 435px;
+    padding-bottom: 20px;
 }
 .box-subscribe-user{
-position: relative;
+    position: relative;
+
 }
 
 .box-subscribe-child{
@@ -540,4 +611,11 @@ position: relative;
     background: -ms-linear-gradient(-45deg, rgba(10,32,144,1) 0%, rgba(35,120,205,1) 100%);
     background: linear-gradient(135deg, rgba(10,32,144,1) 0%, rgba(35,120,205,1) 100%);
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0a2090', endColorstr='#2378cd', GradientType=1 );
+}
+
+
+.page-software{
+    padding: 110px 0 150px 0;
+    background-image: url(../img/features-fon.png);
+    background-repeat: no-repeat;           
 }
