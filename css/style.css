@@ -57,10 +57,10 @@ h1{
     text-transform: uppercase;    
 }
 
-.page-clients .title-40, .page-team .title-40{
+.page-clients .title-40{
     color: #fff;       
 }
-.page-clients .title-40 span, .page-team .title-40 span{
+.page-clients .title-40 span{
     color: #85c8ff;
     text-transform: uppercase;    
 }
@@ -324,7 +324,7 @@ margin-bottom: 0;
 }
 .grid-item{
     text-align: center;
-    box-shadow: 0px 5px 6px #f4f4f4;/*0 9 20 */
+    box-shadow: 0px 8px 13px 0px #f4f4f4;/*0 9 20 */
     border-radius: 7px;   /*10*/
     padding: 50px 0 50px 0; /*40 29 64*/
 }
@@ -546,7 +546,19 @@ margin-bottom: 10px;
     top: -58px;
     right: -170px;
 }
+.intro{
+    color: rbga(0,0,0,0.04);
+    font-size: 300px;
+    font-weight: 900;
+    line-height: 0;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 40px;
+    margin:0;
+    text-align: center;
 
+}
 
 /*analytics*/
 .page-analytics-text{
@@ -570,54 +582,13 @@ margin-bottom: 10px;
 }
 
 /*clients*/
-.box-clients{
-    display: flex;
-    justify-content: space-between;
-    margin-top: 63px;
-}
-.box-clients-item{
-    background-color: #fff;
-    padding: 21px 42px;
-    border-radius: 10px;
-    flex-basis: 31.5%;
-    box-sizing: border-box;
-    font-size: 14px;
-    box-shadow: 0px 5px 6px #f4f4f4;
-}
-.box-clients-item>p{
-    margin-bottom: 4px;
-}
 
-.box-clients-item .name{
-    font-size: 22px;
-    font-weight: 600;
-    color: #000958;
-    line-height: 1.1;
-    margin-bottom: 0;
-    letter-spacing: -0.6px;
-}
-.box-clients-item .position{
-    font-size: 14px;
-    text-transform: uppercase;
-    color: #1085e4;
-    font-weight: 700;
-    letter-spacing: 3px;
-}
-.box-info{
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    margin-top: -9px;
-}
-.box-info>div{
-    padding-left: 17px;
-}
 
 /*plane*/
 .box-price{
     display: flex;
     justify-content: space-between;
-    margin-top: 83px;
+    margin-top: 80px;
 }
 
 .box-price-item{
@@ -641,7 +612,7 @@ margin-bottom: 10px;
     font-size: 70px;
     letter-spacing: -1px;
     margin-top: 0;
-    margin-bottom: 17px;
+    margin-bottom: 15px;
 }
 .box-price-item h3 span{
     font-size: 20px;
@@ -672,8 +643,8 @@ margin-bottom: 10px;
 .box-price-item ul{
     list-style-type: none;
     padding-left: 0;
-    margin-top: 36px;
-    margin-bottom: 63px;
+    margin-top: 34px;
+    margin-bottom: 59px;
     font-size: 14px;
 }
 
@@ -681,58 +652,53 @@ margin-bottom: 10px;
     margin-bottom: 14px; /*отступ элементов списка*/
 }
 
-/*team*/
-.box-team{
+/*clients*/
+.box-clients{
     display: flex;
     justify-content: space-between;
-    margin-top: 140px;
-
+    margin-top: 63px;
 }
-
-.box-team-item{
+.box-clients-item{
     background-color: #fff;
+    padding: 21px 42px;
+    border-radius: 10px;
     flex-basis: 31.5%;
-    box-shadow: 0px 5px 6px #f4f4f4;
-    position: relative;
-    padding: 193px 0 42px 0;
+    box-sizing: border-box;
+    font-size: 14px;
+    box-shadow: 0px 8px 13px 0px #f4f4f4;
 }
-.box-team-item .avatar{
-    position: absolute;
-    top: -86px;
-    left: 0;
-    right: 0;
-    margin: 0 auto;
-
-}
-.box-team-item .btn-more{
-    display: block;
-    background-image: url(../img/plus.png);
-    background-repeat: no-repeat;
-    height: 50px;
-    width: 50px;
-    border: none;    
-    margin: 0 auto;
+.box-clients-item>p{
+    margin-bottom: 4px;
 }
 
-.box-team-item .btn-more:focus{
-    outline: none;
+.box-clients-item .name{
+    font-size: 22px;
+    font-weight: 600;
+    color: #000958;
+    line-height: 1.1;
+    margin-bottom: 0;
+    letter-spacing: -0.6px;
 }
-
-.box-team-item .position{
+.box-clients-item .position{
     font-size: 14px;
     text-transform: uppercase;
-    color: #1a88e1;
-    font-weight: 900;
-    letter-spacing: 2.1px;
-    margin-bottom: 0;
+    color: #1085e4;
+    font-weight: 700;
+    letter-spacing: 3px;
 }
-.box-team-item .name{
-    font-size: 26px;
-    color: #192b59;
-    font-weight: 600;
-    letter-spacing: -0.9px;
-    margin-top: 8px;
+.box-info{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-top: -9px;
 }
+.box-info>div{
+    padding-left: 17px;
+}
+
+/*team*/
+
+
 
 /*page*/
 .page-header{
@@ -810,7 +776,7 @@ margin-bottom: 10px;
     background-image: url(../img/bg.svg);
     background-repeat: no-repeat;
     position: absolute;
-    z-index: -1;;
+    z-index: -1;
     left: 0;
     top:0;
     width: 100%;
@@ -818,16 +784,6 @@ margin-bottom: 10px;
 }
 .page-plane{
     text-align: center;
-    padding: 81px 0 121px 0;
-}
-
-.page-team{
-    background-image: url(../img/bg-team.png);
-    background-repeat: no-repeat;
-    background-position: center;
-    text-align: center;
-    padding: 82px 0 20px 0;
-
 }
 
 
