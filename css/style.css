@@ -1532,9 +1532,9 @@ background-color: #1a88e1;
         margin-top: 20px;
         width: 460px;
     }
-    .contact-form .btn-primary {
-        /* left: 356px; */
-    }
+    /* .contact-form .btn-primary {
+        left: 356px;
+    } */
     h1, .title-40, .title-h2{
         font-size: 40px;
         margin: 0 auto 30px;
